@@ -1,0 +1,143 @@
+/* SURVEY PAGE STYLES */
+
+.photo{
+  width: 85%;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+form {
+  text-align: left;
+}
+
+/* Survey */
+
+.survey {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.survey-header {
+  margin-bottom: -15px;
+}
+
+input[type="radio"] {
+  margin: 0 10px 8px -10px;
+  width: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  border: none;
+  outline: 0;
+  font-size: 14px;
+  height: auto;
+  margin-bottom: 15px;
+  line-height: 2em;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+select:focus, 
+textarea:focus {
+  box-shadow: 0 0 0 3px #7eb4a1;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-left: -15px;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+select {
+  height: 30px;
+  padding-left: 10px;
+}
+
+textarea {
+  height: 7em;
+}
+
+/* Newsletter */
+
+.newsletter {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.newsletter label {
+  text-align: left;
+}
+
+#button-info {
+  padding-top: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #df2046;
+  color: white;
+  border: none;
+  outline: 0;
+  width: 45%;
+  height: 30px;
+  margin-left: 25%;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: transform .5s ease-out;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:focus {
+  box-shadow: 0 0 0 1px white;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+
+  #button-info {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .newsletter input[type="text"],
+  .newsletter input[type="email"] {
+    width: 70%;
+    float: right;
+    margin-bottom: 30px;
+    margin-top: -28px;
+  }
+
+  .newsletter label {
+    width: 30%;
+    margin-top: 32px;
+  }
+}

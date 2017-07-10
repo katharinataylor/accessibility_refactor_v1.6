@@ -1,0 +1,252 @@
+/* Global Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: #2d2b30;
+}
+
+/* Link Styles */
+
+.buy {
+  color: #7eb4a1;
+}
+
+.buy:hover {
+  border-bottom: 1px solid #7eb4a1;
+}
+
+.buy:focus {
+  color: #999;
+  border-color: #999;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+
+nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+nav .name {
+  display: block;
+  margin-right: auto;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+nav a {
+  transition: all .5s;
+  font-weight: bold;
+  text-decoration: none;
+  color: #df2046;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:focus {
+  color: #999;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px;
+  font-size: 20px;
+  text-shadow: 2px 2px #999;
+}
+
+header .name{
+  font-size: 3em;
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+  color: #2d2b30;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #df2046;
+}
+
+/* Main */
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 2px solid #999;
+  clear: both;
+}
+
+.card:hover {
+  border-color: #d9d9d9;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #7eb4a1;
+  margin-top: 10px;
+}
+
+.photo {
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information {
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+  border: none;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+a.social:focus {
+  border: none;
+  outline: 0;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 840px) {
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  nav ul {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  header {
+    min-height: 470px;
+    font-size: 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .card {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}

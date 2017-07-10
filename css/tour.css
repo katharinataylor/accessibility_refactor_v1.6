@@ -1,0 +1,88 @@
+/* TOUR PAGE STYLES */
+
+/* Table */
+
+.table-div {
+	font-family: 'Open Sans', sans-serif;
+  	width: 100%;
+  	margin: -55px;
+  	margin-bottom: 50px;
+  	padding-bottom: 70px;
+}
+
+table {
+	text-align: left;
+	padding: 0;
+	position: relative;
+	top: 110px;
+	left: 10%;
+	font-size: .9em;
+}
+
+caption {
+	text-align: left;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+table th {
+	padding-bottom: 10px;
+}
+
+/* Header */
+
+#pick-header {
+	width: 100%;
+	position: absolute;
+	margin-top: -60px;
+}
+
+.pick {
+  width: 40px;
+  height: 0%;
+  padding: 10px;
+}
+
+#pick-1 {
+	position: relative;
+	top: 58px;
+	right: 40px;
+}
+
+#pick-2 {
+	position: relative;
+	bottom: 74px;
+	left: 190px;
+}
+
+/* Styles for larger screens */
+
+@media (min-width: 580px) {
+	caption {
+		padding-left: 7px;
+	}
+
+	table td, table th {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+@media (min-width: 720px) {
+	.table-div {
+		padding-bottom: 120px;
+	}
+
+	table {
+		margin-top: -45px;
+		float: right;
+		left: 80px;
+	}
+}
+
+
+@media (min-width: 970px) {
+	table {
+		font-size: 1em;
+	}
+}

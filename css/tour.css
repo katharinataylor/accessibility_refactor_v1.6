@@ -23,10 +23,15 @@ caption {
 	text-align: left;
 	margin-bottom: 20px;
 	font-weight: bold;
+	padding-left: 15px;
 }
 
 table th {
 	padding-bottom: 10px;
+}
+
+table td, table th {
+	padding: 3px 15px;
 }
 
 /* Header */
@@ -63,8 +68,7 @@ table th {
 	}
 
 	table td, table th {
-		padding-left: 7px;
-		padding-right: 7px;
+		padding: 4px 7px;
 	}
 }
 
@@ -84,5 +88,13 @@ table th {
 @media (min-width: 970px) {
 	table {
 		font-size: 1em;
+	}
+
+	table td, table th {
+		padding: 5px 25px;
+	}
+
+	caption {
+		padding-left: 25px;
 	}
 }

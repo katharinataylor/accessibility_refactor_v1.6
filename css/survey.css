@@ -24,8 +24,17 @@ form {
   margin-bottom: -15px;
 }
 
+.survey label, 
+.survey legend {
+  padding-bottom: 6px;
+}
+
+.survey legend {
+  padding-left: 0;
+}
+
 input[type="radio"] {
-  margin: 0 10px 8px -10px;
+  margin: 0 10px 8px 0px;
   width: auto;
 }
 
@@ -55,7 +64,8 @@ fieldset {
 }
 
 legend {
-  margin-left: -15px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 label {

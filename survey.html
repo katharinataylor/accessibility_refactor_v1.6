@@ -24,33 +24,32 @@
     </header>
     <!-- MAIN -->
     <main role="main">
-      <h3 class="survey-header">Survey</h3>
+      <h3 class=" heading survey-header">Survey</h3>
       <div class="card flex">
         <img class="photo" src="img/concert01.jpg" alt="Concert image">
         <div class="container">
           <!-- FORM -->
           <form class="survey">
             <fieldset>
-              <legend>Who is your favorite band member?</legend>
+              <legend>Band favorites</legend>
 
+              <p id="band-members">Who is your favourite band member?</p>
               <label for="john">
-              <input type="radio" name="res" value="John" id="john">John
+              <input type="radio" name="res" value="John" id="john" aria-describedby="band-members">John
               </label>
 
               <label for="hazzard">
-              <input type="radio" name="res" value="Hazzard" id="hazzard">Hazzard
+              <input type="radio" name="res" value="Hazzard" id="hazzard" aria-describedby="band-members">Hazzard
               </label>
 
               <label for="bob">
-              <input type="radio" name="res" value="Bob" id="bob">Bob
+              <input type="radio" name="res" value="Bob" id="bob" aria-describedby="band-members">Bob
               </label>
 
               <label for="sally">
-              <input type="radio" name="res" value="Sally" id="sally">Sally
+              <input type="radio" name="res" value="Sally" id="sally" aria-describedby="band-members">Sally
               </label>
 
-            </fieldset>
-            <!-- <fieldset> -->
               <label for="albums">What is your favorite album?</label>
               <select id="albums" name="select">
                 <option value="1">A Day Of Old</option>
@@ -65,31 +64,33 @@
                 <option value="10">Street Of The Rider</option>
                 <option value="11">This Is For You</option>
               </select>
-            <!-- </fieldset> -->
-            <!-- <fieldset> -->
+          
               <label for="textfield">What is your favorite song?</label>
               <textarea id="textfield"></textarea>
-            <!-- </fieldset> -->
+            </fieldset>
           </form>
         </div>
       </div>
       <!-- NEWSLETTER -->
-      <h3 class="survey-header">Newsletter</h3>
+      <h3 class=" heading survey-header">Newsletter</h3>
       <div class="card flex">
         <img class="photo" src= "img/the_band.jpg" alt="Photo of the band playing live">
           <div class="container">
             <form class="newsletter">
-              <label for="name_textfield">Name:</label> 
-              <input type ="text" name="textfield" id="name_textfield">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name_textfield">Name:</label> 
+                <input type ="text" name="textfield" id="name_textfield">
 
-              <label for="mail_textfield">Email:</label> 
-              <input type ="email" name="textfield" id="mail_textfield">
+                <label for="mail_textfield">Email:</label> 
+                <input type ="email" name="textfield" id="mail_textfield">
 
-              <label for="mail_retype">Retype Email:</label> 
-              <input type ="email" name="textfield" id="mail_retype">
+                <label for="mail_retype">Retype Email:</label> 
+                <input type ="email" name="textfield" id="mail_retype">
 
-              <p id="button-info">Click the button if you would like to sign up for the newsletter.</p>
-              <button type="submit" id="submit_button" aria-describedby="button-info">Sign Up</button>
+                <p id="button-info">Click the button if you would like to sign up for the newsletter.</p>
+                <button type="submit" id="submit_button" aria-describedby="button-info">Sign Up</button>
+              </fieldset>
             </form>
           </div>
       </div>
